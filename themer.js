@@ -1,3 +1,8 @@
+/*!
+ * Themer v1.0 (https://github.com/zahadneokurkycz/Themer)
+ * Copyright 2024 zahadneokurkycz
+ * Licensed under MIT (https://github.com/zahadneokurkycz/Themer/blob/master/LICENSE)
+ */
 
 var Themer = {};
 
