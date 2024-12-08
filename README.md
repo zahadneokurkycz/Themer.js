@@ -3,21 +3,21 @@
 
 
 ## How to use
-DISCLAIMER: You **MUST use Bootstrap for this!** This library uses _Bootstrap's_ theme system!
+DISCLAIMER: You **MUST have installed Bootstrap for this!** This library uses _Bootstrap's_ theme and dropdown system!
 
 1. Add the `themer.min.js` script to your page and of course edit the location to fit your needs
 ```
 <script src="./themer.min.js"></script>
 ```
-2. For a lot better experience and 100% functionality, insert `onclick="Themer.init()"` attribute to your body element so for example it may look like this:
+2. For a lot better experience and 100% functionality, insert `onLoad="Themer.init()"` attribute to your body element so for example it may look like this:
 ```
-<body onClick="Themer.init();">
+<body onLoad="Themer.init();">
 ```
-3. Now, we will add a button to change themes. Use the element `<themer-btn></themer-btn>` with attribute `btnclass` set to whatever classes the bootstrap's dropdown button should have. So for we can for example use custom class `themebtn`:
+3. Now, we will add a button to change themes. Use the element `<themer-btn></themer-btn>` with attribute `btnclass` set to whatever classes the bootstrap's dropdown button should have. So for example, we can use our custom class `themebtn`:
 ```
 <themer-btn btnclass="themebtn"></themer-btn>
 ```
-Or bootstrap's secondary button:
+Or bootstrap's secondary button class:
 ```
 <themer-btn btnclass="btn btn-secondary"></themer-btn>
 ```
