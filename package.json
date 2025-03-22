@@ -23,5 +23,11 @@
   "bugs": {
     "url": "https://github.com/zahadneokurkycz/Themer/issues"
   },
-  "homepage": "https://github.com/zahadneokurkycz/Themer#readme"
+  "homepage": "https://github.com/zahadneokurkycz/Themer#readme",
+  "publishConfig": {
+    "@zahadneokurkcz:registry": "https://npm.pkg.github.com"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
 }
