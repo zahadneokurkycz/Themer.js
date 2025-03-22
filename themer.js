@@ -1,5 +1,5 @@
 /*!
- * Themer v1.1 (https://github.com/zahadneokurkycz/Themer)
+ * Themer v1.0.1 (https://github.com/zahadneokurkycz/Themer)
  * Copyright 2024 zahadneokurkycz
  * Licensed under MIT (https://github.com/zahadneokurkycz/Themer/blob/master/LICENSE)
  */
