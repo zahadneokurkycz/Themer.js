@@ -1,6 +1,6 @@
 {
   "name": "@zahadneokurkycz/themer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Simple bootstrap dark mode/light mode switcher",
   "main": "themer.min.js",
   "scripts": {

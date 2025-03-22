@@ -1,5 +1,5 @@
 /*!
- * Themer v1.0 (https://github.com/zahadneokurkycz/Themer)
+ * Themer v1.1 (https://github.com/zahadneokurkycz/Themer)
  * Copyright 2024 zahadneokurkycz
  * Licensed under MIT (https://github.com/zahadneokurkycz/Themer/blob/master/LICENSE)
  */
@@ -90,7 +90,7 @@ Themer.CheckThemes = () => {
 
 Themer.CreateElement = () => {
 	try{
-		const themerEl = document.getElementsByTagName('themer-btn')[0]
+		const themerEl = document.getElementsByTagName("themer-btn")[0];
 		themerEl.innerHTML = `<div class="dropdown-center">
 		<button class="` + themerEl.getAttribute('btnclass') + ` dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="ThemerBtn01">
 		  Theme
