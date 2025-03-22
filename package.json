@@ -1,0 +1,27 @@
+{
+  "name": "@zahadneokurkycz/themer",
+  "version": "1.0.0",
+  "description": "Simple bootstrap dark mode/light mode switcher",
+  "main": "themer.min.js",
+  "scripts": {
+    "test": "exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zahadneokurkycz/Themer.git"
+  },
+  "keywords": [
+    "theme",
+    "bootstrap",
+    "themer",
+    "auto",
+    "darkmode",
+    "lightmode"
+  ],
+  "author": "zahadneokurkycz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zahadneokurkycz/Themer/issues"
+  },
+  "homepage": "https://github.com/zahadneokurkycz/Themer#readme"
+}
