@@ -14,7 +14,7 @@ DISCLAIMER: You **MUST have installed Bootstrap for this!** This library uses _B
 
 or even better you can use cdn
 ```
-<script src="https://cdn.jsdelivr.net/gh/zahadneokurkycz/Themer.js@master/themer.min.js"><script>
+<script src="https://cdn.jsdelivr.net/gh/zahadneokurkycz/Themer.js@master/themer.min.js"></script>
 ```
 
 2. For a lot better experience and 100% functionality, insert `onLoad="Themer.init()"` attribute to your body element so for example it may look like this:
