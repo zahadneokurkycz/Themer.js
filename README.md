@@ -6,11 +6,17 @@
 DISCLAIMER: You **MUST have installed Bootstrap for this!** This library uses _Bootstrap's_ theme and dropdown system!
 
 1. Add the `themer.min.js` script to your page and of course edit the location to fit your needs
- Or you can also install via npm if it works better for you
+ Or you can also install via npm if it works better for you.
 
 ```
 <script src="./themer.min.js"></script>
 ```
+
+or even better you can use cdn
+```
+<script src="https://cdn.jsdelivr.net/gh/zahadneokurkycz/Themer.js@master/themer.min.js"><script>
+```
+
 2. For a lot better experience and 100% functionality, insert `onLoad="Themer.init()"` attribute to your body element so for example it may look like this:
 ```
 <body onLoad="Themer.init();">
