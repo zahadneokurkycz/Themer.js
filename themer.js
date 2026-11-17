@@ -1,13 +1,14 @@
-/*!
- * Themer v1.0.1 (https://github.com/zahadneokurkycz/Themer)
- * Copyright 2024 zahadneokurkycz
+/*
+ * Themer v1.1 (https://github.com/zahadneokurkycz/Themer)
+ * Copyright 2026 zahadneokurkycz
  * Licensed under MIT (https://github.com/zahadneokurkycz/Themer/blob/master/LICENSE)
+ * Made for Bootstrap v6
  */
 
 var Themer = {};
 
-const acclass = 'dropdown-item active'
-const stclass = 'dropdown-item';
+const acclass = 'menu-item active'
+const stclass = 'menu-item';
 
 
 Themer.SetTheme = (theme) => {
@@ -24,13 +25,13 @@ Themer.SetTheme = (theme) => {
 			thbtn2.classList = acclass;
 			thbtn3.classList = stclass;
 			thbtn4.classList = stclass;
-			thbtn.innerHTML = '<i class="bi bi-brightness-high"></i> Theme'
+			thbtn.innerHTML = '<i class="bi bi-brightness-high"></i> Theme <i class="bi bi-chevron-expand"></i>'
 
 		} else if (theme == 'dark') {
 			thbtn2.classList = stclass;
 			thbtn3.classList = acclass;
 			thbtn4.classList = stclass;
-			thbtn.innerHTML = '<i class="bi bi-moon-stars"></i> Theme'
+			thbtn.innerHTML = '<i class="bi bi-moon-stars"></i> Theme <i class="bi bi-chevron-expand"></i>'
 		}
 		document.getElementsByTagName('html')[0].setAttribute('data-bs-theme', theme)
 	} catch (e) {
@@ -45,7 +46,7 @@ Themer.SetAutoTheme = () => {
 		const thbtn3 = document.getElementById('ThemerBtn03');
 		const thbtn4 = document.getElementById('ThemerBtn04');
 		const date = new Date();
-		thbtn.innerHTML = '<i class="bi bi-circle-half"></i> Theme'
+		thbtn.innerHTML = '<i class="bi bi-circle-half"></i> Theme <i class="bi bi-chevron-expand"></i>'
 		thbtn2.classList = stclass;
 		thbtn3.classList = stclass;
 		thbtn4.classList = acclass;
@@ -91,14 +92,14 @@ Themer.CheckThemes = () => {
 Themer.CreateElement = () => {
 	try{
 		const themerEl = document.getElementsByTagName("themer-btn")[0];
-		themerEl.innerHTML = `<div class="dropdown-center">
-		<button class="` + themerEl.getAttribute('btnclass') + ` dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="ThemerBtn01">
-		  Theme
+		themerEl.innerHTML = `
+		<button class="` + themerEl.getAttribute('btnclass') + `" type="button" data-bs-toggle="menu" aria-expanded="false" data-bs-placement="bottom" id="ThemerBtn01">
+		  Theme <i class="bi bi-chevron-expand"></i>
 		</button>
-		<ul class="dropdown-menu">
-		  <li><a class="dropdown-item" href="#" onclick="Themer.SetTheme('light')" id="ThemerBtn02"><i class="bi bi-brightness-high"></i> Light</a></li>
-		  <li><a class="dropdown-item" href="#" onclick="Themer.SetTheme('dark')" id="ThemerBtn03"><i class="bi bi-moon-stars"></i> Dark</a></li>
-		  <li><a class="dropdown-item" href="#" onclick="Themer.SetTheme('auto')" id="ThemerBtn04"><i class="bi bi-circle-half"></i> Auto</a></li>
+		<ul class="menu">
+		  <li><a class="menu-item" href="#" onclick="Themer.SetTheme('light')" id="ThemerBtn02"><i class="bi bi-brightness-high"></i> Light</a></li>
+		  <li><a class="menu-item" href="#" onclick="Themer.SetTheme('dark')" id="ThemerBtn03"><i class="bi bi-moon-stars"></i> Dark</a></li>
+		  <li><a class="menu-item" href="#" onclick="Themer.SetTheme('auto')" id="ThemerBtn04"><i class="bi bi-circle-half"></i> Auto</a></li>
 		</ul>
 	  </div>`
 	} catch (e) {
